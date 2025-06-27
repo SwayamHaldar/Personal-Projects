@@ -1,0 +1,43 @@
+/* index.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(../images/7-76929_82-4k-hd-wallpapers-hd-wallpapers-laptop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}

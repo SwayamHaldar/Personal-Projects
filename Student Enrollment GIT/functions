@@ -1,0 +1,8 @@
+export default function UIDGeneration(len = 3) {
+  const digits = "0123456789";
+  let uid = "";
+  for (let i = 0; i <= 3; i++) {
+    uid += digits[Math.floor(Math.random() * digits.length)];
+  }
+  return parseInt(uid);
+}
