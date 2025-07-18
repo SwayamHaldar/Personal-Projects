@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patshala</title>
+    <link rel="stylesheet" href="/styles/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay-content">
+        <p>Student Details</p>
+        <form
+          id="SubjectForm"
+          class="form-container"
+          action="/submit"
+          method="POST"
+          enctype="multipart/form-data"
+          autocomplete="on"
+        >
+          <div class="form-group">
+            <label for="UID">UID:</label>
+            <input type="text" id="UID" name="ID" placeholder="UID" />
+          </div>
+          <div class="form-group">
+            <label for="name">Subject:</label>
+            <input
+              type="text"
+              id="Subject"
+              name="subjects"
+              placeholder="Subject"
+              required
+            />
+          </div>
+
+          <button type="submit" id="Enroll_btn">Enroll</button>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/enroll.js"></script>
+  </body>
+</html>
